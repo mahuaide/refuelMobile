@@ -1,0 +1,45 @@
+{
+  "hasError": false,
+  "data": {
+    "projectId": 1012,
+    "projectName": "测试",
+    "projectDesc": "描述而已",
+    "isOpen": "1",
+    "createUid": 1014,
+    "users": [
+      {
+        "userId": 1001,
+        "userName": "余伟",
+        "projectId": 1014,
+        "roleType":3,
+        "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+      },
+      {
+        "userId": 1004,
+        "userName": "王恩喜",
+        "projectId": 1014,
+        "roleType":3,
+        "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+      },
+      {
+        "userId": 1008,
+        "userName": "张炎",
+        "roleType":2,
+        "photo": ""
+      },
+      {
+        "userId": 1009,
+        "userName": "吴梦君",
+        "photo": "",
+        "roleType":4
+      },
+      {
+        "userId": 1003,
+        "userName": "麻槐德",
+        "photo": "",
+        "roleType":1
+      }
+    ]
+  },
+  "error": null
+}

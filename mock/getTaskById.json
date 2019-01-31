@@ -1,0 +1,59 @@
+{
+  "hasError": false,
+  "data": {
+    "taskId": 1192,
+    "taskName": "系列是汽车之家新闻频道在2017年全上说着卡提车？我们决",
+    "taskDesc": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "taskType": 1010,
+    "state": 2,
+    "taskOwner": 1003,
+    "planWorkload": 8,
+    "remainWorkload": 8,
+    "storyId": 1078,
+    "projectId": 1052,
+    "sprintId": 1113,
+    "updateUid": null,
+    "updateTime": 1509430056000,
+    "tevent": "gfedwsdre",
+    "faultLevel":1,
+    "attachments": [
+      {
+        "attachmentId": 1070,
+        "fileUri": "group1/M00/00/01/ChMKI1npyQaAPNzmAAK9eCvOTzM812.jpg",
+        "fileName": "<<>>.jpg"
+      },
+      {
+        "attachmentId": 1070,
+        "fileUri": "group1/M00/00/01/ChMKI1npyQaAPNzmAAK9eCvOTzM812.jpg",
+        "fileName": "<<北京北京高级的文档哈哈或>>.jpg"
+      }
+    ],
+    "functions":[{
+      "fpId":"1001",
+      "functionProcess":"asfawefaw",
+      "dataMovementType":"E",
+      "dataGroup":"数据组",
+      "dataAttr":"数据属性",
+      "cfp":1,
+      "taskId":1073,
+      "createTime":1504583929000,
+      "createUid":1004
+    }],
+    "owner": {
+      "userId": 1003,
+      "userName": "麻总",
+      "account": "mahd",
+      "password": "123456a",
+      "roleCodes": null,
+      "email": "mhd_001@sina.com",
+      "state": 1,
+      "photo": "http://10.19.10.35:18080/",
+      "phone": "18618368770",
+      "createTime": 1504583929000
+    },
+    "remark": "系列是汽车之家新闻频道在2017年全新开设的栏目，灵感来自于新闻组内部的一句玩笑：“嘴上说不要，钱包还是很诚实的嘛~”为什么有些新车在上市前期槽点满满、饱受非议，上市后却莫名成了销量黑马？为什么消费者嘴上说着不要，最后还是乖乖刷卡提车？我们决",
+    "brotherId": 12314,
+    "faultId": 12312
+  },
+  "error": null
+}

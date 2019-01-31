@@ -1,0 +1,58 @@
+{
+  "hasError": false,
+  "data": {
+    "backlogId": 1000,
+    "backlogName": "下拉菜单",
+    "backlogDesc": "测试",
+    "backlogType": null,
+    "moduleId": null,
+    "requirementId": 1000,
+    "requirementName":"lalall",
+    "createUid":1000,
+    "createName":"溜溜溜",
+    "backlogLevel": 88,
+    "state": 1,
+    "createTime": 1504749821000,
+    "planFinishTime": 1505318400000,
+    "finishTime": 1504713600000,
+    "storys": [
+      {
+        "storyId": 1000,
+        "storyName": "新增",
+        "state": 2,
+        "sprintName": "ceshi"
+      },
+      {
+        "storyId": 1001,
+        "storyName": "查询",
+        "state": 1,
+        "sprintName": "ceshi"
+      },
+      {
+        "storyId": 1002,
+        "storyName": "修改",
+        "state": 1,
+        "sprintName": "ceshi"
+      }
+    ],
+    "records": [
+      {
+        "recordDesc": "ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1ceshi1",
+        "createTime": 1505804443402
+      },
+      {
+        "recordDesc": "ceshi2",
+        "createTime": 1504756757000
+      },
+      {
+        "recordDesc": "ceshi3",
+        "createTime": 1504756771000
+      }
+    ],
+    "attachments": [
+      {
+        "fileName": "updateTest1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "hasError": false,
+  "data": {
+    "caseId": 1101,
+    "caseName": "用例三",
+    "caseDesc": "啊adfasd",
+    "state": 1,
+    "createUid": 1011,
+    "previousCondition":"前置条件",
+    "testStep":"测试步骤",
+    "expectedResult":"预测结果",
+    "storyName":"这是一个故事",
+    "fixedUid": 1011,
+    "fixedName": "孙立",
+    "taskId": null,
+    "createTime": 1516085298000,
+    "fixedTime": 1516086554000,
+    "closeTime": 1516086554000,
+    "createName": "孙立",
+    "caseLevel": 1004,
+    "storyId": 1566,
+    "projectId": 1082,
+    "sprintId": 1254,
+    "sprintName": "迭代5",
+    "fixTaskId": 1782,
+    "testTaskId": 1783,
+    "testUid": 1011,
+    "testName": "孙立",
+    "updateUid": null,
+    "updateTime": null,
+    "levelOrder": 0,
+    "attachments": [
+      {
+        "attachmentId": 1039,
+        "fileUri": "group1/M00/00/05/ChMKI1pdoDCACCmVAABqT-2Gd88439.jpg",
+        "fileName": "ts.jpg",
+        "caseId":1000
+      }
+    ],
+    "historys": [
+      {
+        "recordId": null,
+        "createTime": 1516086554000,
+        "recordDesc": "孙立 修改了用例描述\r\n",
+        "createUid":1000,
+        "caseId":1000
+      },
+      {
+        "recordId": null,
+        "createTime": 1516086554000,
+        "recordDesc": "孙立 修改了用例描述\r\n",
+        "createUid":1000,
+        "caseId":1000
+      },
+      {
+        "recordId": null,
+        "createTime": 1516086554000,
+        "recordDesc": "孙立 修改了用例描述\r\n",
+        "createUid":1000,
+        "caseId":1000
+      },
+      {
+        "recordId": null,
+        "createTime": 1516086554000,
+        "recordDesc": "孙立 修改了用例描述\r\n",
+        "createUid":1000,
+        "caseId":1000
+      },
+      {
+        "recordId": null,
+        "createTime": 1516085298000,
+        "recordDesc": "孙立将用例加入迭代:迭代5撒娇把上边大傻逼大家啊不舒服节哀顺变放假啊把数据方便谁加把劲司法实践好办法即时比分节哀顺变发交社保发即时比分就按时间 省地方少见啊发件撒啊就是飞机撒奋笔疾书健身房把数据大部分交社保发即时比分就是健康大生不逢时不分胜负部署到绝不放手保妇康栓开始卡夫卡撒放把水开发包括三部分卡萨本菲卡不是靠翻倍卡鼠标放健身房或所军付所军奥付所付不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不巴巴爸爸不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不不",
+        "createUid":1001,
+        "caseId":1000
+      },
+      {
+        "recordId": null,
+        "createTime": 1516085298000,
+        "recordDesc": "孙立创建用例",
+        "createUid":1002,
+        "caseId":1000
+      }
+    ],
+    "faults":[
+      {
+        "faultId": 1005,
+        "faultName": "新增",
+        "faultDesc": "faultDesc",
+        "faultLevel": 1,
+        "fixedUid":"haha",
+        "createUid": 1000,
+        "fixUid": 1001,
+        "createName": "wangsc",
+        "sprintId": 1005,
+        "sprintName": "迭代1",
+        "state": 1,
+        "creatTime": 1505700565000,
+        "finishTime": 1505700565000,
+        "closeTime": 1505700565000,
+        "testUid": 1001
+      }
+    ]
+  },
+  "error": null
+}

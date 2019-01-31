@@ -1,0 +1,74 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "storyId": 1001,
+      "storyName": "这是一个故事的描述，描述了一个故事为什么是个故事，而且没有挂失",
+      "storyDesc": "这是一个故事的描述，描述了一个故事为什么是个故事，而且没有挂失",
+      "storyLevel": 88,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1000,
+      "storyName": "故事2",
+      "storyDesc": "故事2的描述",
+      "storyLevel": 87,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1007,
+      "storyName": "故事3",
+      "storyDesc": "故事3的描述",
+      "storyLevel": 86,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1008,
+      "storyName": "故事4",
+      "storyDesc": "故事4的描述",
+      "storyLevel": 20,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1108,
+      "storyName": "故事5",
+      "storyDesc": "故事5的描述",
+      "storyLevel": 19,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1009,
+      "storyName": "故事6",
+      "storyDesc": "故事6的描述",
+      "storyLevel": 18,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1018,
+      "storyName": "故事7",
+      "storyDesc": "故事7的描述",
+      "storyLevel": 17,
+      "functionScale":2,
+      "createTime":1511146477000
+    },
+    {
+      "storyId": 1028,
+      "storyName": "故事8",
+      "storyDesc": "故事8的描述",
+      "storyLevel": 16,
+      "functionScale":2,
+      "createTime":1511146477000
+    }
+  ],
+  "error": {
+    "code": 1,
+    "message": "",
+    "paramErrors": null
+  }
+}

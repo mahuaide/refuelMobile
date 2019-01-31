@@ -1,0 +1,19 @@
+{
+  "hasError": false,
+  "data": {
+    "userId": 1000,
+    "userName": "麻槐德",
+    "account": null,
+    "roleCodes": [
+      "1",
+      "2"
+    ],
+    "email": "mahd1@sina.com",
+    "state": 0,
+    "photo": "//wwc.alicdn.com/avatar/getAvatar.do?userId=436706669&width=160&height=160&type=sns",
+    "phone": 18618368770,
+    "createTime": null
+  },
+  "error": null
+}
+

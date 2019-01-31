@@ -1,0 +1,65 @@
+{
+    "hasError": false,
+    "data": {
+        "faultId": 1005,
+        "faultName": "新增",
+        "faultDesc": "faultDesc",
+        "faultLevel": 1,
+        "createUid": 1000,
+        "fixUid": 1001,
+        "createName": "wangsc",
+        "sprintId": 1005,
+        "sprintName": "迭代1",
+        "state": 1,
+        "creatTime": 1505700565000,
+        "finishTime": 1505700565000,
+        "closeTime": 1505700565000,
+        "testUid": 1001,
+        "attachments": [
+            {
+                "attachmentId": 1,
+                "fileUri": "test1",
+                "fileName": "附件"
+            },
+            {
+                "attachmentId": 2,
+                "fileUri": "test2",
+                "fileName": "photo"
+            },
+            {
+                "attachmentId": 3,
+                "fileUri": "test1",
+                "fileName": "附件"
+            }
+        ],
+        "historys": [
+            {
+                "recordId": null,
+                "createTime": 1505662752000,
+                "recordDesc": "ceshi"
+            },
+            {
+                "recordId": null,
+                "createTime": 1505662771000,
+                "recordDesc": "ceshi2"
+            },
+            {
+                "recordId": null,
+                "createTime": 1507796833000,
+                "recordDesc": "user0将该用户故事从“哈哈哈哈哈哈哈哈哈”(id:1081)中移除"
+            },
+            {
+                "recordId": null,
+                "createTime": 1507798691000,
+                "recordDesc": "user0将该用户故事从“哈哈哈哈哈哈哈哈哈”(id:1081)中移除"
+            },
+            {
+                "recordId": null,
+                "createTime": 1507800121000,
+                "recordDesc": "user0将该用户故事分配给“哈哈哈哈哈哈哈哈哈”(id:1081)迭代"
+            }
+        ],
+        "tasks": null
+    },
+    "error": null
+}

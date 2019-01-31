@@ -1,0 +1,9 @@
+{
+  "hasError": false,
+  "data": "",
+  "error": {
+    "code": 1,
+    "message": "不能新建任务，因为迭代，故事都没了",
+    "paramErrors": null
+  }
+}

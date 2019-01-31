@@ -1,0 +1,59 @@
+{
+  "data": {
+    "storyId": 1,
+    "storyName": "董庆文的要命需求",
+    "unDistribute": [
+      {
+        "taskId": "a",
+        "taskName": "任务名称-北京联通crm改造"
+      },
+      {
+        "taskId": "b",
+        "taskName": "任务名称-北京联通billing改造"
+      },
+      {
+        "taskId": "c",
+        "taskName": "任务名称-北京联通集客系统改造"
+      }
+    ],
+    "distributed": [
+      {
+        "taskId": "d",
+        "taskName": "任务名称-北京移动crm改造",
+        "developerId": "123",
+        "developerName": "张三",
+        "avator": ""
+      }
+    ],
+    "developing": [
+      {
+        "taskId": "e",
+        "taskName": "任务名称-北京电信crm改造",
+        "developerId": "124",
+        "developerName": "李四",
+        "avator": ""
+      }
+    ],
+    "blocking": [
+      {
+        "taskId": "f",
+        "taskName": "任务名称",
+        "developerId": "125",
+        "developerName": "王五",
+        "avator": ""
+      }
+    ],
+    "finish": [
+      {
+        "taskId": "g",
+        "taskName": "任务名称",
+        "developerId": "126",
+        "developerName": "赵六",
+        "avator": ""
+      }
+    ]
+  },
+  "message": "success",
+  "respCode": "0001"
+}
+

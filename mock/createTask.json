@@ -1,0 +1,21 @@
+{
+  "hasError": false,
+  "data": {
+    "taskId": 10010,
+    "taskName": "刚你建的那个任务111111111111111111",
+    "taskDesc": "刚你建的那个任务的描述",
+    "taskType": "2",
+    "state": "1",
+    "taskOwner": 1111,
+    "planWorkload": 8,
+    "remainWorkload": 1,
+    "storyId": 1001,
+    "projectId": 1231,
+    "sprintId": 12312,
+    "updateUid": 1213,
+    "updateTime": 12345654345665
+  },
+  "error": {
+    "message": "各种异常"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hasError": false,
+  "data": {
+    "storyId": null,
+    "storyName": null,
+    "storyDesc": null,
+    "createTime": null,
+    "createUid": null,
+    "createName": null,
+    "state": null,
+    "storyLevel": null,
+    "functionScale": null,
+    "sprintName": null,
+    "moduleId": null,
+    "backlogId": null,
+    "sprintId": null,
+    "createTimeBegin": null,
+    "createTimeEnd": null,
+    "updateTime": null,
+    "updateUid": null,
+    "createDay": null,
+    "endTime": null,
+    "unreceived": 1,
+    "inSprint": 4,
+    "canceled": 1,
+    "relatedBacklog": null,
+    "attachments": null,
+    "historys": null
+  },
+  "error": null
+}

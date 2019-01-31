@@ -1,0 +1,44 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "teamId": 1000,
+      "teamName": "ceshi",
+      "teamDesc": "ceshiceshi",
+      "state": 1,
+      "canSelect": true,
+      "createTime": 1505122869000,
+      "createUid": 1000,
+      "projectId": 1014,
+      "users": [
+        {
+          "userId": 1001,
+          "userName": "张三",
+          "projectId": 1014,
+          "canSelect": true,
+          "roleType": 1,
+          "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+        },
+        {
+          "userId": 1004,
+          "userName": "user0",
+          "projectId": 1014,
+          "canSelect": true,
+          "roleType": 1,
+          "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+        }
+      ]
+    },
+    {
+      "teamId": 1001,
+      "teamName": "ceshi2",
+      "teamDesc": "ceshi2",
+      "state": 1,
+      "canSelect": false,
+      "createTime": 1505122887000,
+      "createUid": 1000,
+      "projectId": 1014,
+      "users": []
+    }
+  ]
+}

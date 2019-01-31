@@ -1,0 +1,9 @@
+{
+  "hasError": false,
+  "data": null,
+  "error": {
+    "code": 5,
+    "message": "迭代时间有重叠",
+    "paramErrors": null
+  }
+}

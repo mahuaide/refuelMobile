@@ -1,0 +1,96 @@
+{
+  "hasError": false,
+  "data": {
+    "total": 8,
+    "rows": [
+      {
+        "storyId": 1008,
+        "storyName": "新增",
+        "storyDesc": "新增",
+        "createTime": 1505787196000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 2,
+        "state":1
+      },
+      {
+        "storyId": 1007,
+        "storyName": "test",
+        "storyDesc": "test",
+        "createTime": 1505708260000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 3,
+        "state":-1
+      },
+      {
+        "storyId": 1006,
+        "storyName": "updateTest",
+        "storyDesc": "updateTest撒娇的那是开发那可是分内事看反馈斯诺伐克十分难看是否能阿咖酚散开始疯狂司法考试",
+        "createTime": 1505708135000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 3,
+        "state":0
+      },
+      {
+        "storyId": 1005,
+        "storyName": "新增",
+        "storyDesc": "新增",
+        "createTime": 1505700565000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 3,
+        "state":1
+      },
+      {
+        "storyId": 1004,
+        "storyName": "新增",
+        "storyDesc": "新增",
+        "createTime": 1505700325000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 3,
+        "state":1
+      },
+      {
+        "storyId": 1002,
+        "storyName": "修改",
+        "storyDesc": "修改",
+        "createTime": 1505185814000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 22,
+        "createDay": 9,
+        "state":0
+      },
+      {
+        "storyId": 1001,
+        "storyName": "查询",
+        "storyDesc": "查询",
+        "createTime": 1504757196000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 88,
+        "createDay": 14,
+        "state":0
+      },
+      {
+        "storyId": 1000,
+        "storyName": "updateTest",
+        "storyDesc": "updateTest",
+        "createTime": 1504700800000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "storyLevel": 20,
+        "createDay": 14,
+        "state":-1
+      }
+    ]
+  }
+}

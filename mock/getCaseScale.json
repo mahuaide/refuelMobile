@@ -1,0 +1,22 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "scaleId": 1000,
+      "scaleDesc": "信息"
+    },
+    {
+      "scaleId": 1001,
+      "scaleDesc": "重要"
+    },
+    {
+      "scaleId": 1003,
+      "scaleDesc": "严重"
+    },
+    {
+      "scaleId": 1004,
+      "scaleDesc": "阻断"
+    }
+  ],
+  "error": null
+}

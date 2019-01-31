@@ -1,0 +1,50 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "typeId": 1000,
+      "typeDesc": "分析"
+    },
+    {
+      "typeId": 1001,
+      "typeDesc": "设计"
+    },
+    {
+      "typeId": 1002,
+      "typeDesc": "开发"
+    },
+    {
+      "typeId": 1003,
+      "typeDesc": "测试"
+    },
+    {
+      "typeId": 1004,
+      "typeDesc": "配置"
+    },
+    {
+      "typeId": 1005,
+      "typeDesc": "环境"
+    },
+    {
+      "typeId": 1006,
+      "typeDesc": "文档"
+    },
+    {
+      "typeId": 1007,
+      "typeDesc": "评审"
+    },
+    {
+      "typeId": 1008,
+      "typeDesc": "学习"
+    },
+    {
+      "typeId": 1009,
+      "typeDesc": "缺陷"
+    },
+    {
+      "typeId": 1010,
+      "typeDesc": "验证"
+    }
+  ],
+  "error": null
+}

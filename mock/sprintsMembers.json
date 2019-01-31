@@ -1,0 +1,29 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "userId": 1001,
+      "userName": "张三",
+      "projectId": 1014,
+      "canSelect": true,
+      "roleType": 1,
+      "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+    },
+    {
+      "userId": 1004,
+      "userName": "user0",
+      "projectId": 1014,
+      "canSelect": false,
+      "roleType": 1,
+      "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+    },
+    {
+      "userId": 1005,
+      "userName": "user11",
+      "projectId": 1014,
+      "canSelect": true,
+      "roleType": 1,
+      "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+    }
+  ]
+}

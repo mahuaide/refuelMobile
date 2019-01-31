@@ -1,0 +1,14 @@
+{
+  "planWorkload": 32,
+  "actualRemainWorkload": 241,
+  "workloads": [
+    {
+      "sprintTime": 1520870400000,
+      "remainWorkload": 241
+    },
+    {
+      "sprintTime": 1520956800000,
+      "remainWorkload": 241
+    }
+  ]
+}

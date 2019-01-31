@@ -1,0 +1,32 @@
+{
+  "hasError": false,
+  "data": {
+    "total": 2,
+    "rows": [
+      {
+        "caseId": 1005,
+        "caseName": "新增",
+        "caseLevel": 11,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "sprint":"sprintId+sprintName",
+        "state": 1,
+        "storyName":"这是一个故事",
+        "faultCount":"20",
+        "creatTime": 1505700565000
+      },
+      {
+        "caseId": 1004,
+        "caseName": "新增",
+        "caseLevel": 1,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "sprint":"sprintId+sprintName",
+        "state": 1,
+        "storyName":"这是一个故事",
+        "faultCount":"20",
+        "creatTime": 1505700565000
+      }
+    ]
+  }
+}

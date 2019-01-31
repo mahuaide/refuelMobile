@@ -1,0 +1,44 @@
+{
+  "hasError": false,
+  "data": {
+    "total": 2,
+    "rows": [
+      {
+        "storyId": 1005,
+        "storyName": "新增",
+        "createTime": 1505700565000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "state": 1,
+        "sprintId":"",
+        "sprintName":null,
+        "storyLevel": 20,
+        "functionScale": 1
+      },
+      {
+        "storyId": 1005,
+        "storyName": "新增",
+        "createTime": 1505700565000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "state": 1,
+        "sprintId": "",
+        "sprintName": null,
+        "storyLevel": 20,
+        "functionScale": 1
+      },
+      {
+        "storyId": 1004,
+        "storyName": "新增",
+        "createTime": 1505700325000,
+        "createUid": 1000,
+        "createName": "wangsc",
+        "state": -1,
+        "sprintId":1001,
+        "sprintName":"迭代2",
+        "storyLevel": 20,
+        "functionScale": 1
+      }
+    ]
+  }
+}

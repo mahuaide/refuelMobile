@@ -1,0 +1,20 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "storyId": 1000,
+      "storyName": "新增",
+      "storyDesc": "新增"
+    },
+    {
+      "storyId": 1001,
+      "storyName": "查询",
+      "storyDesc": "查询"
+    },
+    {
+      "storyId": 1005,
+      "storyName": "修改",
+      "storyDesc": "修改"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "state":1,
+      "projectId": 1040,
+      "projectName": "新建一个项目试试拖拽和看板新建任务",
+      "projectDesc": null,
+      "isOpen": null,
+      "createUid": null,
+      "userRole": 3,
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 16,
+      "projectStartTime": 1603296000000,
+      "projectElapsedTime": 1,
+      "favorite": 1,
+      "backlog": {
+        "all": 1,
+        "done": 0
+      },
+      "sprint": {
+        "all": 1,
+        "done": 0
+      },
+      "story": {
+        "all": 5,
+        "done": 0
+      },
+      "task": {
+        "all": 13,
+        "done": 0
+      },
+      "members": null
+    },
+    {
+      "projectId": 1039,
+      "state":1,
+      "projectName": "新增一个测试项目",
+      "projectDesc": null,
+      "isOpen": null,
+      "createUid": null,
+      "userRole": 3,
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 14,
+      "projectStartTime": 1507737600000,
+      "projectElapsedTime": 12,
+      "favorite": 0,
+      "backlog": {
+        "all": 12,
+        "done": 0
+      },
+      "sprint": {
+        "all": 4,
+        "done": 0
+      },
+      "story": {
+        "all": 10,
+        "done": 1
+      },
+      "task": {
+        "all": 18,
+        "done": 5
+      },
+      "members": null
+    },
+    {
+      "projectId": 1038,
+      "state":1,
+      "projectName": "测试下迭代",
+      "projectDesc": null,
+      "isOpen": null,
+      "createUid": null,
+      "userRole": 2,
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 9,
+      "projectStartTime": 1507478400000,
+      "projectElapsedTime": 15,
+      "favorite": 0,
+      "backlog": {
+        "all": 1,
+        "done": 0
+      },
+      "sprint": {
+        "all": 2,
+        "done": 2
+      },
+      "story": {
+        "all": 0,
+        "done": 0
+      },
+      "task": {
+        "all": 0,
+        "done": 0
+      },
+      "members": null
+    },
+    {
+      "projectId": 1037,
+      "state":1,
+      "projectName": "新建一个牛B的项目",
+      "projectDesc": null,
+      "isOpen": null,
+      "createUid": null,
+      "userRole": 2,
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 11,
+      "projectStartTime": 1507478400000,
+      "projectElapsedTime": 15,
+      "favorite": 0,
+      "backlog": {
+        "all": 2,
+        "done": 0
+      },
+      "sprint": {
+        "all": 10,
+        "done": 10
+      },
+      "story": {
+        "all": 5,
+        "done": 0
+      },
+      "task": {
+        "all": 4,
+        "done": 0
+      },
+      "members": null
+    },
+    {
+      "projectId": 1036,
+      "state":1,
+      "projectName": "中国移动通信公司北京客户服务中心项目组CRM组",
+      "projectDesc": null,
+      "isOpen": null,
+      "createUid": null,
+      "userRole": 1,
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 16,
+      "projectStartTime": null,
+      "projectElapsedTime": null,
+      "favorite": 0,
+      "backlog": {
+        "all": 0,
+        "done": 0
+      },
+      "sprint": {
+        "all": 0,
+        "done": 0
+      },
+      "story": {
+        "all": 0,
+        "done": 0
+      },
+      "task": {
+        "all": 0,
+        "done": 0
+      },
+      "members": null
+    }
+  ],
+  "error": null
+}

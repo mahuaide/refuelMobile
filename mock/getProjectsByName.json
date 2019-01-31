@@ -1,0 +1,75 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "projectId": 1000,
+      "projectName": "按名称查出来的项目1",
+      "projectDesc": null,
+      "isOpen": 0,
+      "createUid": null,
+      "userRole": "4",
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 90,
+      "projectStartTime": 1504684725734,
+      "projectElapsedTime": 3,
+      "favorite": 0,
+      "backlog": {
+        "all": 0,
+        "done": 0
+      },
+      "sprint": {
+        "all": 20,
+        "done": 11
+      },
+      "story": {
+        "all": 30,
+        "done": 25
+      },
+      "task": {
+        "all": 40,
+        "done": 0
+      },
+      "members": null
+    },
+    {
+      "projectId": 1011,
+      "projectName": "按名称查出来的项目1",
+      "projectDesc": null,
+      "isOpen": 0,
+      "createUid": null,
+      "userRole": "4",
+      "masters": null,
+      "pos": null,
+      "bas": null,
+      "memberNumber": 90,
+      "projectStartTime": 1504684725734,
+      "projectElapsedTime": 3,
+      "favorite": 0,
+      "backlog": {
+        "all": 200,
+        "done": 12
+      },
+      "sprint": {
+        "all": 23,
+        "done": 21
+      },
+      "story": {
+        "all": 600,
+        "done": 78
+      },
+      "task": {
+        "all": 999,
+        "done": 120
+      },
+      "members": null
+    }
+  ],
+  "error": {
+    "code": 1,
+    "message": "系统异常",
+    "paramErrors": [
+    ]
+  }
+}

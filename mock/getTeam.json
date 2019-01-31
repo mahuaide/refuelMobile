@@ -1,0 +1,15 @@
+{
+  "hasError": false,
+  "data": [
+    {
+      "teamId": 1000,
+      "teamName": "拉拉阿拉啦啦啦啦",
+      "teamDesc": "这是一个团队描述"
+    },
+    {
+      "teamId": 1001,
+      "teamName": "拉拉阿拉",
+      "teamDesc": "这是一个团队描述"
+    }
+  ]
+}

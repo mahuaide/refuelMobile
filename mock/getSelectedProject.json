@@ -1,0 +1,24 @@
+{
+  "hasError": false,
+  "data": {
+    "projectId": 1014,
+    "projectName": "北京移动电商项目",
+    "projectDesc": "测试",
+    "isOpen": 0,
+    "createUid": 1000,
+    "userRole": 3,
+    "masters": null,
+    "pos": null,
+    "bas": null,
+    "memberNumber": null,
+    "projectStartTime": null,
+    "projectElapsedTime": null,
+    "favorite": null,
+    "backlog": null,
+    "sprint": null,
+    "story": null,
+    "task": null,
+    "members": null
+  },
+  "error": null
+}

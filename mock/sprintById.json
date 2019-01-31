@@ -1,0 +1,58 @@
+{
+  "hasError": false,
+  "data": {
+    "sprintId": 1002,
+    "projectId": 1014,
+    "sprintName": "迭代名称12",
+    "sprintDesc":"迭代描述12",
+    "state":2,
+    "workHours":7,
+    "startTime": 1507478400000,
+    "endTime": 1507823999000,
+    "createUid": 1000,
+    "sprintDayList":[1524096000000,1524182400000,1524268800000,1524355200000,1524441600000,1524528000000],
+    "createTime": 1505122926000,
+    "teamId": 1000,
+    "teamName": "团队名称",
+    "users":[
+      {
+        "userId": 1001,
+        "userName": "张三",
+        "projectId": 1014,
+        "canSelect":true,
+        "roleType": 1,
+        "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+      },
+      {
+        "userId": 1004,
+        "userName": "user0",
+        "projectId": 1014,
+        "canSelect":true,
+        "roleType": 1,
+        "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+      },
+      {
+        "userId": 10054,
+        "userName": "user44",
+        "projectId": 1014,
+        "canSelect":true,
+        "roleType": 1,
+        "photo": "http://pic63.nipic.com/file/20150406/13125463_160426571000_2.jpg"
+      }
+    ],
+    "storys":[
+      {
+        "storyId": 2001,
+        "storyName": "这是一个故事的描述，描述了一个故事为什么是个故事，而且没有挂失",
+        "storyDesc": "这是一个故事的描述，描述了一个故事为什么是个故事，而且没有挂失",
+        "storyLevel": 88
+      },
+      {
+        "storyId": 2000,
+        "storyName": "故事2",
+        "storyDesc": "故事2的描述",
+        "storyLevel": 20
+      }
+    ]
+  }
+}

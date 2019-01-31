@@ -1,0 +1,499 @@
+{
+  "hasError": false,
+  "data": [
+    {
+    "recordId": 2486,
+    "recordDesc": "谁谁谁 修改了 任务标题为sssss\r\n谁谁谁 修改了 任务描述为sssss\r\n谁谁谁 修改了 任务类型为sssss\r\n谁谁谁 修改了 任务备注为sssss\r\n谁谁谁 修改了 任务领取人为sssss\r\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+    "createTime": 1509430056000,
+    "createUid": 1003,
+    "taskId": 1192
+  },
+    {
+      "recordId": 2485,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509430055000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2484,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509430054000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2483,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509430044000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2482,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509430043000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2476,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509429196000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2475,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509429195000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2474,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509429185000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2473,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509429184000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2458,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509414797000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2457,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509414797000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2456,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509359954000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2455,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359952000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2454,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359950000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2453,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509359947000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2452,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359917000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2451,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359916000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2450,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359914000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2449,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509359911000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2448,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359909000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2447,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359909000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2446,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509359908000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2445,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359906000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2444,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359905000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2442,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359902000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2443,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509359902000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2441,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359899000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2440,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509359899000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2439,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359898000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2438,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359897000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2437,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509359897000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2436,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359896000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2435,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359894000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2434,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359893000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2433,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509359882000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2432,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359881000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2431,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359880000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2430,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509359879000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2429,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359879000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2428,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359878000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2427,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359877000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2426,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359874000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2425,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359867000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2424,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359865000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2423,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359865000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2422,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359861000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2421,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359859000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2420,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509359858000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2419,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509359857000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2418,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509359856000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2411,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352497000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2410,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509352496000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2409,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352496000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2408,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509352495000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2407,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352494000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2406,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509352493000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2405,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509352493000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2404,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509352492000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2403,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352491000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2402,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509352491000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2401,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352490000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2400,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509352489000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2399,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509352488000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2384,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509349443000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2383,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509349443000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2382,
+      "recordDesc": "麻总 把任务状态置为 已完成",
+      "createTime": 1509349442000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2381,
+      "recordDesc": "麻总 把任务状态置为 阻塞中",
+      "createTime": 1509349441000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2380,
+      "recordDesc": "麻总 领取了任务",
+      "createTime": 1509349440000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2379,
+      "recordDesc": "麻总 把任务状态置为 未分配",
+      "createTime": 1509349439000,
+      "createUid": 1003,
+      "taskId": 1192
+    },
+    {
+      "recordId": 2378,
+      "recordDesc": "user0 新建任务",
+      "createTime": 1509349418000,
+      "createUid": 1004,
+      "taskId": 1192
+    }],
+  "error": {
+    "code": 1,
+    "message": "参数异常",
+    "paramErrors": null
+  }
+}
