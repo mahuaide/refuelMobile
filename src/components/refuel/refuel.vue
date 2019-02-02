@@ -55,6 +55,7 @@
   import {getRefuelLogAll} from '../../http/api'
   import Bscroll from 'better-scroll';
   import split  from  '../common/split.vue'
+  import {lsWrite,lsRead} from '../../common/js/ls'
   export default{
     data(){
       return {
