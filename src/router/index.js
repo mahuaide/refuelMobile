@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from '../store/store'
 import Login from '../components/login/login.vue'
 import home from '../components/home/home.vue'
 import main from '../components/main/main.vue'
@@ -14,8 +15,13 @@ import picture from '../components/main/subRoute/picture.vue'
 import second from '../components/main/subRoute/second.vue'
 import ecar from '../components/main/subRoute/ecar.vue'
 import welcome from '../components/home/welcome.vue'
+import {lsWrite,lsRead} from '../common/js/ls'
+import * as types from '../store/type'
 
-Vue.use(Router)
+Vue.use(Router);
+if(lsRead("user").userId){
+  store.commit(types.LOGIN, lsRead("user"));
+}
 
 export default new Router({
   linkActiveClass: "active",

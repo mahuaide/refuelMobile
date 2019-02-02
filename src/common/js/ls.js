@@ -2,25 +2,25 @@
  * Created by Administrator on 2017/8/2.
  */
 export function lsWrite(key, value) {
-  let qmc = window.localStorage.__ai_qmc_aidomobile__;
-  if (!qmc) {
-    qmc = {};
+  let refuel = window.localStorage.__ai_refuel_mobile__;
+  if (!refuel) {
+    refuel = {};
   } else {
-    qmc = JSON.parse(qmc);
+    refuel = JSON.parse(refuel);
   }
-  qmc[key] = value;
-  window.localStorage.__ai_qmc_aidomobile__ = JSON.stringify(qmc);
+  refuel[key] = value;
+  window.localStorage.__ai_refuel_mobile__ = JSON.stringify(refuel);
 };
 
 export function lsRead(key) {
-  let qmc = window.localStorage.__ai_qmc_aidomobile__;
-  if (!qmc) {
+  let refuel = window.localStorage.__ai_refuel_mobile__;
+  if (!refuel) {
     return "";
   }
-  qmc = JSON.parse(qmc);
-  if (!qmc) {
+  refuel = JSON.parse(refuel);
+  if (!refuel) {
     return "";
   }
-  let ret = qmc[key];
+  let ret = refuel[key];
   return ret || "";
 };
