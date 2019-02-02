@@ -264,8 +264,7 @@
                 color red
                 vertical-align top
               .icon-zhongshihua, .icon-yangguang
-                font-size 38px
-
+                font-size 36px
             .refuel-log-oilType
               display block
               float right

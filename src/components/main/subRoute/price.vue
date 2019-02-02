@@ -91,7 +91,7 @@
         font-size 80px
         color #CE1B22
       .unit-text
-        font-size 50px
+        font-size 46px
     .price-oil-price
       flex 1
       line-height 234px
@@ -99,7 +99,7 @@
         font-size 80px
         color rgb(255, 215, 0)
       .unit-text
-        font-size 50px
+        font-size 46px
 
   .price-time
     text-align center
