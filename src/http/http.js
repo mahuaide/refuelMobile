@@ -10,9 +10,11 @@ import router from '../router/index.js'
 axios.defaults.timeout = 60000;
 if (process.env.NODE_ENV === 'production') {
   // axios.defaults.baseURL = `http://${process.env.BASE_URL}`;
-  axios.defaults.baseURL = "http://192.168.0.37:3000";
+  //axios.defaults.baseURL = "http://192.168.0.37:3000";
+  axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
 } else {
-  axios.defaults.baseURL = "http://192.168.0.37:3000";
+  //axios.defaults.baseURL = "http://192.168.0.37:3000";
+  axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
 }
 
 axios.defaults.withCredentials = true;

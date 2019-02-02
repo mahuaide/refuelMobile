@@ -13,6 +13,7 @@ import know from '../components/main/subRoute/know.vue'
 import picture from '../components/main/subRoute/picture.vue'
 import second from '../components/main/subRoute/second.vue'
 import ecar from '../components/main/subRoute/ecar.vue'
+import welcome from '../components/home/welcome.vue'
 
 Vue.use(Router)
 
@@ -22,7 +23,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Login
+      component: welcome
     },
     {
       path: '/login',
