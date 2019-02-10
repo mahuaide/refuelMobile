@@ -12,4 +12,5 @@ export default {
   getLoginUserInfo:USER +'/getLoginUserInfo',
   checkUserExist:USER + '/checkUserExist/{userName}',
   getRefuelLogInStation:REFUEL + '/query/instation',
+  getGasPrice: STATION + '/query/gasPrice',
 }

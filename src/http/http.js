@@ -13,8 +13,8 @@ if (process.env.NODE_ENV === 'production') {
   //axios.defaults.baseURL = "http://192.168.0.37:3000";
   axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
 } else {
-  //axios.defaults.baseURL = "http://192.168.0.37:3000";
-  axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
+  axios.defaults.baseURL = "http://localhost:3000";
+  // axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
 }
 
 axios.defaults.withCredentials = true;

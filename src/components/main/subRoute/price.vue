@@ -18,30 +18,42 @@
       </div>
       <split></split>
     </template>
-    <p class="price-time">本次油价调整日期:2019年1月12日</p>
-    <p class="price-time">下次油价调整日期:2019年1月25日</p>
+    <p class="price-time">本次油价调整日期:{{price.adjust_time | timeFormate('YYYY-MM-DD')}}</p>
+    <p class="price-time">下次油价调整日期:{{price.next_time  | timeFormate('YYYY-MM-DD')}}</p>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import split  from  '../../common/split.vue'
+  import {getGasPrice} from '../../../http/api'
   export default{
     data(){
       return {
         price: {
-          price_time_from: "2019年1月12日",
-          price_time_to: "2019年1月25日",
-          prices:[
-            {type:"92#汽油",price:6.44},
-            {type:"95#汽油",price:6.86},
-            {type:"98#汽油",price:7.84},
-            {type:"0#柴油",price:6.09},
+          adjust_time: "",
+          next_time: "",
+          prices: [
+            {type: "92#汽油", price:0},
+            {type: "95#汽油", price: 0},
+            {type: "98#汽油", price: 0},
+            {type: "0#柴油", price: 0},
           ]
         }
       }
     },
     methods: {},
     mounted(){
+      getGasPrice().then(res => {
+        let {code, data, errMsg} = res.data;
+        if (code == 200) {
+            this.price.adjust_time = data[0].adjust_time;
+            this.price.next_time = data[0].next_time;
+            this.price.prices[0].price = data[0].price_92;
+            this.price.prices[1].price = data[0].price_95;
+            this.price.prices[2].price = data[0].price_98;
+            this.price.prices[3].price = data[0].price_0;
+        }
+      })
     },
     computed: {},
     components: {
