@@ -31,11 +31,9 @@
       return {
         sysWeek: 1,
         limits: {
-          limit_from: "2019年1月7日",
-          limit_to: "2019年4月7日",
-          limit_num: [
-            [1, 6], [2, 7], [3, 8], [4, 9], [5, 0]
-          ]
+          limit_from: "",
+          limit_to: "",
+          limit_num: []
         }
       }
     },
