@@ -18,13 +18,14 @@
       </div>
       <split></split>
     </template>
-    <p class="limit-time">本轮周期:{{limits.limit_from}}-{{limits.limit_to}}</p>
+    <p class="limit-time">本轮周期:{{limits.limit_from | timeFormate('YYYY-MM-DD')}}-{{limits.limit_to  | timeFormate('YYYY-MM-DD')}}</p>
     <p class="limit-text">早7点至晚8点，限行机动车（含临时号牌）禁止在五环路以内道路行驶。</p>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import split  from  '../../common/split.vue'
+  import {getLimitDays} from '../../../http/api'
   export default{
     data(){
       return {
@@ -41,6 +42,16 @@
     methods: {},
     mounted(){
       this.sysWeek = new Date().getDay();
+      getLimitDays().then(res=>{
+          let {code,data,errMsg} = res.data;
+          if(code==200){
+              this.limits.limit_from = data[0].limit_from;
+              this.limits.limit_to = data[0].limit_to;
+              this.limits.limit_num = JSON.parse(data[0].limit_num);
+          }else{
+
+          }
+      })
     },
     computed: {},
     components: {

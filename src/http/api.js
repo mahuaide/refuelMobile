@@ -19,4 +19,5 @@ export const updateRefuelLogById = params=>{return axios.post(resfulParamsToUrl(
 //加油站
 export const getStationAll = params=>{return axios.get(resfulParamsToUrl(Path.getStationAll,params),{params})}
 export const getGasPrice = params=>{return axios.get(resfulParamsToUrl(Path.getGasPrice,params),{params})}
-
+//限行
+export const getLimitDays = params=>{return axios.get(resfulParamsToUrl(Path.getLimitDays,params),{params})}

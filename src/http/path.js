@@ -1,6 +1,7 @@
 const REFUEL = '/refuel';
 const STATION = '/station';
 const USER = '/user'
+const LIMIT = '/limit'
 export default {
   register:USER + '/register',
   getRefuelLogAll:REFUEL+'/query/all',
@@ -13,4 +14,5 @@ export default {
   checkUserExist:USER + '/checkUserExist/{userName}',
   getRefuelLogInStation:REFUEL + '/query/instation',
   getGasPrice: STATION + '/query/gasPrice',
+  getLimitDays: LIMIT + '/query/limitDays',
 }
