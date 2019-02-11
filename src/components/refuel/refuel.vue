@@ -4,7 +4,7 @@
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
         <span><i class="iconfont icon-jingdong-jiayouqia-e"></i>加油：{{sum}}元</span>
-        <span><i class="iconfont icon-gonglishu"></i>里程：{{$store.state.user.mileage}}公里</span>
+        <span><i class="iconfont icon-gonglishu"></i>里程：{{total_mileAge}}公里</span>
         <span><i class="iconfont icon-maiche"></i>车型：{{$store.state.user.carType}}</span>
       </div>
       <div class="refuel-add" :class="[addColor?'touchE':'touchno']" @touchstart="touchS()" @touchend="touchE()">
@@ -160,8 +160,18 @@
       })
 
     },
-    computed: {}
-    ,
+    computed: {
+      total_mileAge:function(){
+          let t = 0;
+          for(let i=0;i<this.refuelLog.length;i++){
+              if(this.refuelLog[i].mileage != ''){
+                  t = this.refuelLog[i].mileage;
+                  break;
+              }
+          }
+          return t;
+      }
+    },
     components: {
       split
     }
