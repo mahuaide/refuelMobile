@@ -1,17 +1,25 @@
 <template>
   <div class="common-wrapper">
-    用户
+    {{user}}
   </div>
 </template>
 
 
 <script type="text/ecmascript-6">
+  import {getLoginUserInfo} from '../../http/api'
   export default{
     data(){
-      return {}
+      return {
+          user:{}
+      }
     },
     mounted(){
-        this.$router.push('/login');
+      getLoginUserInfo().then(res => {
+        let {code, data, errMsg} = res.data;
+        if (code == 200) {
+          this.user = data[0];
+        }
+      })
     }
   }
 </script>
