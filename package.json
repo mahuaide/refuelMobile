@@ -1,7 +1,7 @@
 {
-  "name": "aidomobile",
+  "name": "refuelmobile",
   "version": "1.0.0",
-  "description": "aido mobile temple",
+  "description": "refuel mobile temple",
   "author": "mhd_001@sina.com <mhd_001@sina.com>",
   "private": true,
   "scripts": {
