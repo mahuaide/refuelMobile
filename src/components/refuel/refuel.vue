@@ -15,7 +15,7 @@
     <transition name="fade">
       <div v-show="dropDown" class="refresh">更新...<i class="iconfont icon-chebaba-jibencanshu rotating"></i></div>
     </transition>
-    <div class="refuel-log" ref="log">
+    <div class="refuel-log" ref="log" >
       <ul>
         <li v-for="(log,index) in refuelLog" :key="log.refuel_id">
           <p class="refuel-log-oil">
@@ -43,6 +43,7 @@
           </p>
         </li>
       </ul>
+      <div v-if="refuelLog.length==0" class="refuel-log-noData">暂无加油记录</div>
     </div>
     <div class="showMore" v-show="dropUp && !noMore">{{moreText}}...<i
       class="iconfont icon-chebaba-jibencanshu rotating"></i></div>
@@ -310,5 +311,9 @@
               display block
               float right
               font-size 30px
+      .refuel-log-noData
+        text-align center
+        font-size 28px
+        color #999
 </style>
 
