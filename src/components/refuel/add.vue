@@ -1,16 +1,42 @@
 <template>
   <transition name="move">
-    <div v-show="showFlag" class="add" ref="add">
-      <div class="back" @click="hide">
-        <i class="iconfont icon-houtui"></i>
+    <div v-show="showFlag" class="wrapper">
+      <div class="add-title">
+        <div class="back" @click="hide">
+          <i class="iconfont icon-houtui"></i>
+        </div>
+        {{refuelLog.refuel_id ? '编辑' : '新增'}}记录
       </div>
-      <div class="add-title">{{refuelLog.refuel_id?'编辑':'新增'}}记录</div>
-      <div style="padding-top:44px">
+      <div>
         <mt-datetime-picker
           ref="picker"
           type="date"
           v-model="pickerValue">
         </mt-datetime-picker>
+      </div>
+      <div ref="add" class="add">
+          <div class="add-wrapper">
+            <mt-field label="加油日期" placeholder="" v-model="refuelLog.refuel_time" @click.native="openPicker()"
+                      :readonly=true></mt-field>
+            <mt-field label="付款金额" placeholder="" v-model="refuelLog.pay_money"></mt-field>
+            <mt-radio
+              title="付款方式"
+              v-model="refuelLog.pay_type"
+              :options="payTypeOptions">
+            </mt-radio>
+            <mt-radio
+              title="油号"
+              v-model="refuelLog.oil_type"
+              :options="[92,95,98]">
+            </mt-radio>
+            <mt-field label="升" placeholder="" v-model="refuelLog.liters"></mt-field>
+            <mt-radio
+              title="加油站"
+              v-model="refuelLog.refuel_station_id"
+              :options="stationOptions">
+            </mt-radio>
+            <mt-field label="里程" placeholder="" v-model="refuelLog.mileage"></mt-field>
+          </div>
       </div>
     </div>
   </transition>
@@ -18,16 +44,50 @@
 
 <script>
   import BScroll from 'better-scroll';
+  import {getStationAll} from '../../http/api'
+  import split  from  '../common/split.vue'
   export default{
     props: ['refuelLog'],
     data: function () {
       return {
         showFlag: false,
-        pickerValue:"",
+        pickerValue: "",
+        payTypeOptions: [
+          {
+            label: '现金',
+            value: 'cash'
+          },
+          {
+            label: '微信',
+            value: 'wechat',
+          },
+          {
+            label: '支付宝',
+            value: 'alipay'
+          },
+          {
+            label: '银行卡',
+            value: 'card'
+          }
+        ],
+        stationOptions: []
       }
     },
     mounted: function () {
-        this.openPicker();
+      getStationAll().then(res => {
+        let {code, data, errMsg} = res.data;
+        if (code == 200) {
+          this.stationOptions = data.map((st) => {
+            return {value: st.station_id, label: st.station_name}
+          })
+        } else {
+          this.$notify({
+            title: 'wrong',
+            message: errMsg || 'getStationAll error!',
+            type: 'error'
+          })
+        }
+      })
     },
     methods: {
       openPicker() {
@@ -49,27 +109,47 @@
         this.showFlag = false;
       },
     },
-    components: {
-    }
+    components: {}
   }
 </script>
 
 <style scoped>
-  .add {
+  .wrapper{
     position: fixed;
     top: 0px;
     left: 0;
-    height: 1200px;
     bottom: 100px;
     z-index: 1200;
     width: 100%;
     background-color: #fff;
   }
+  .add {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    bottom: 200px;
+    width: 100%;
+    background-color: #fff;
+  }
 
-  .back {
+  .add-title {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 90px;
+    line-height: 96px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 1300;
+    background-color: #F8F8F8;
+  }
+
+  .add-title .back {
     position: absolute;
-    left: 20px;
     top: 20px;
+    left: 20px;
     width: 50px;
     height: 50px;
     line-height: 54px;
@@ -77,32 +157,23 @@
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     text-align: center;
-    z-index: 2;
   }
-  .back .icon-houtui {
+
+  .add-title .back .icon-houtui {
     color: #fff;
     display: block;
     font-size: 32px;
   }
-  .add-title {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 90px;
-    line-height: 96px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    background-color:#F8F8F8;
-    z-index: 1;
+
+  .add .add-wrapper{
+    padding:0 26px 0 26px;
   }
   .move-enter-active, .move-leave-active {
     transition: all 0.2s linear;
   }
 
   .move-enter, .move-leave-active {
-    transform: translate3d(100%,0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
 </style>

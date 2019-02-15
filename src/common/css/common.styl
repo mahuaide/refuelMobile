@@ -7,6 +7,10 @@
   line-height: 46px;
 }
 
+.mintui-field-error {
+  font-size 36px
+}
+
 .mint-msgbox .mint-msgbox-btns {
   height 56px
 }
@@ -30,20 +34,78 @@
 
 .mint-datetime-action {
   display: inline-block;
-  height: 60px;
+  height: 80px;
   width: 50%;
   text-align: center;
-  line-height: 64px;
+  line-height: 84px;
   font-size: 30px;
   color: #000;
 }
 
 .picker-slot {
-    font-size:30px
+  font-size: 30px
 }
 
 .picker-toolbar {
-  height: 60px;
+  height: 80px;
+}
+
+.mint-cell-text, .mint-radiolist-title {
+  font-weight bold
+  color #000
+}
+
+.mint-cell-wrapper, .mint-radiolist-title {
+  font-size 32px
+}
+
+.mint-radiolist .mint-cell-wrapper {
+  padding 20px 10px
+}
+
+.mint-field, .mint-radiolist {
+  margin 30px 0
+}
+
+.mint-cell-value {
+  border-bottom 2px solid #ddd
+}
+
+.mint-field .mint-cell-title {
+  width: 180px
+}
+
+.mint-radio-core {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100%;
+  border: 2px solid #ccc;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.mint-radio-core::after {
+  content: " ";
+  border-radius: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.mint-radio-input:checked + .mint-radio-core {
+  background-color: #26a2ff;
+  border-color: #26a2ff;
 }
 
 @-webkit-keyframes rotating {
@@ -85,3 +147,15 @@
   animation: rotating 2s linear infinite;
 }
 
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.fn-clear {
+  display: inline-block;
+}

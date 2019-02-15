@@ -1,6 +1,6 @@
 <template>
   <div class="common-wrapper">
-    <add ref="add" :refuelLog="Log"></add>
+    <add ref="add" :refuelLog="log"></add>
     <div class="owner-info">
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
@@ -55,6 +55,7 @@
 
 <script type="text/ecmascript-6">
   import {getRefuelLogAll} from '../../http/api'
+  import {timeFormate} from '../../filters/time'
   import Bscroll from 'better-scroll';
   import split  from  '../common/split.vue'
   import add  from  './add.vue'
@@ -62,7 +63,7 @@
   export default{
     data(){
       return {
-        Log:"",
+        log:"",
         addColor: 0,
         dropDown: false,
         dropUp: false,
@@ -100,12 +101,13 @@
         this.addColor = 1;
       },
       touchE(){
-        this.Log ="";
+        this.log ="";
         this.addColor = 0;
         this.$refs.add.show();
       },
       edit(log){
-        this.Log =log;
+        this.log =Object.assign({},log);
+        this.log.refuel_time = timeFormate(this.log.refuel_time,'YYYY年MM月DD日');
         this.$refs.add.show();
       }
     },
