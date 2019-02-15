@@ -1,5 +1,6 @@
 <template>
   <div class="common-wrapper">
+    <add ref="add" :refuelLog="Log"></add>
     <div class="owner-info">
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
@@ -17,7 +18,7 @@
     </transition>
     <div class="refuel-log" ref="log" >
       <ul>
-        <li v-for="(log,index) in refuelLog" :key="log.refuel_id">
+        <li v-for="(log,index) in refuelLog" :key="log.refuel_id" @click="edit(log)">
           <p class="refuel-log-oil">
             <span class="refuel-log-staton">
               <i class="iconfont icon-zhongshiyou" v-if="log.refuel_station_id =='10001'"></i>
@@ -56,10 +57,12 @@
   import {getRefuelLogAll} from '../../http/api'
   import Bscroll from 'better-scroll';
   import split  from  '../common/split.vue'
+  import add  from  './add.vue'
   import {lsWrite,lsRead} from '../../common/js/ls'
   export default{
     data(){
       return {
+        Log:"",
         addColor: 0,
         dropDown: false,
         dropUp: false,
@@ -97,7 +100,13 @@
         this.addColor = 1;
       },
       touchE(){
+        this.Log ="";
         this.addColor = 0;
+        this.$refs.add.show();
+      },
+      edit(log){
+        this.Log =log;
+        this.$refs.add.show();
       }
     },
     mounted(){
@@ -174,7 +183,8 @@
       }
     },
     components: {
-      split
+      split,
+      add
     }
   }
 </script>

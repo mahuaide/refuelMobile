@@ -45,7 +45,7 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .footer-wrapper
     position fixed
-    z-index 1100
+    z-index 1300
     left 0
     bottom 0
     width 100%

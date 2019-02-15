@@ -14,7 +14,7 @@ import 'animate.css'
 import  i18n from './common/lang/index'
 import fastclick from 'fastclick'
 import Loading from './components/loading'
-import {Loadmore, Popup, Switch} from 'mint-ui';
+import {Loadmore, Popup, Switch,DatetimePicker} from 'mint-ui';
 
 fastclick.attach(document.body);
 var t = null;
@@ -24,6 +24,7 @@ Object.keys(filters).forEach(key => Vue.filter(key, filters[key]));
 Vue.component(Loadmore.name, Loadmore);
 Vue.component(Popup.name, Popup);
 Vue.component(Switch.name, Switch);
+Vue.component(DatetimePicker.name, DatetimePicker);
 Vue.use(Loading);
 
 Vue.directive('delay-loading', {componentUpdated:function (el, binding) {
