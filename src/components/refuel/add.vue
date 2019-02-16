@@ -117,7 +117,12 @@
           updateRefuelLogById(form).then(res => {
             let {code, data, errMsg} = res.data;
             if (code == 200) {
-              this.$emit('updateRefuel', this.refuelLog.refuel_id);
+              this.stationOptions.forEach(st=>{
+                if(st.value == form.refuel_station_id){
+                  form.station_name = st.label;
+                }
+              })
+              this.$emit('updateRefuel', form);
               this.hide()
             } else {
             }

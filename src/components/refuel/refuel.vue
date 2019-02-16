@@ -86,7 +86,11 @@
         this.scroll.scrollTo(0, 0, 300);
       },
       updateLog(val){
-        console.log(val);
+        this.refuelLog.forEach((log, index) => {
+          if (log.refuel_id == val.refuel_id) {
+            this.refuelLog.splice(index, 1,val);
+          }
+        })
       },
       delLog(val){
         this.refuelLog.forEach((log, index) => {
@@ -132,7 +136,6 @@
         this.$refs.add.show();
       },
       edit(log){
-        console.log(log);
         this.log = Object.assign({}, log);
         this.pickerValue = new Date(this.log.refuel_time);
         this.$refs.add.show();
