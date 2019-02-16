@@ -1,6 +1,6 @@
 <template>
   <div class="common-wrapper">
-    <add ref="add" :refuelLog="log"></add>
+    <add ref="add" :refuelLog="log" :pickerValue="pickerValue"></add>
     <div class="owner-info">
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
@@ -63,6 +63,7 @@
   export default{
     data(){
       return {
+        pickerValue:new Date(),
         log:"",
         addColor: 0,
         dropDown: false,
@@ -101,13 +102,20 @@
         this.addColor = 1;
       },
       touchE(){
-        this.log ="";
+        this.log ={
+          refuel_time:new Date(),
+          pay_money:0,
+          pay_type:'cash',
+          oil_type:92,
+          refuel_station_id:'10002',
+          mileage:0
+        }
         this.addColor = 0;
         this.$refs.add.show();
       },
       edit(log){
         this.log =Object.assign({},log);
-        this.log.refuel_time = timeFormate(this.log.refuel_time,'YYYY年MM月DD日');
+        this.pickerValue = new Date(this.log.refuel_time);
         this.$refs.add.show();
       }
     },

@@ -11,32 +11,36 @@
         <mt-datetime-picker
           ref="picker"
           type="date"
-          v-model="pickerValue">
+          v-model="pickerValue"
+          @confirm="handleConfirm"
+        >
         </mt-datetime-picker>
       </div>
       <div ref="add" class="add">
-          <div class="add-wrapper">
-            <mt-field label="加油日期" placeholder="" v-model="refuelLog.refuel_time" @click.native="openPicker()"
-                      :readonly=true></mt-field>
-            <mt-field label="付款金额" placeholder="" v-model="refuelLog.pay_money"></mt-field>
-            <mt-radio
-              title="付款方式"
-              v-model="refuelLog.pay_type"
-              :options="payTypeOptions">
-            </mt-radio>
-            <mt-radio
-              title="油号"
-              v-model="refuelLog.oil_type"
-              :options="[92,95,98]">
-            </mt-radio>
-            <mt-field label="升" placeholder="" v-model="refuelLog.liters"></mt-field>
-            <mt-radio
-              title="加油站"
-              v-model="refuelLog.refuel_station_id"
-              :options="stationOptions">
-            </mt-radio>
-            <mt-field label="里程" placeholder="" v-model="refuelLog.mileage"></mt-field>
-          </div>
+        <div class="add-wrapper">
+          <mt-field label="加油日期" placeholder="" v-model="refuelTimeshow" @click.native="openPicker()"
+                    :readonly=true></mt-field>
+          <mt-field label="付款金额" placeholder="" v-model="refuelLog.pay_money"></mt-field>
+          <mt-radio
+            title="付款方式"
+            v-model="refuelLog.pay_type"
+            :options="payTypeOptions">
+          </mt-radio>
+          <mt-radio
+            title="油号"
+            v-model="refuelLog.oil_type"
+            :options="[92,95,98]">
+          </mt-radio>
+          <mt-field label="升" placeholder="" v-model="refuelLog.liters"></mt-field>
+          <mt-radio
+            title="加油站"
+            v-model="refuelLog.refuel_station_id"
+            :options="stationOptions">
+          </mt-radio>
+          <mt-field label="里程" placeholder="" v-model="refuelLog.mileage"></mt-field>
+          <div class="refuel-save" @click="save">保存</div>
+          <div class="refuel-del" v-if="refuelLog.refuel_id" @click="del">删除</div>
+        </div>
       </div>
     </div>
   </transition>
@@ -44,14 +48,14 @@
 
 <script>
   import BScroll from 'better-scroll';
-  import {getStationAll} from '../../http/api'
+  import {timeFormate} from '../../filters/time'
+  import {getStationAll, updateRefuelLogById, delRefuelLogById, newRefuelLog} from '../../http/api'
   import split  from  '../common/split.vue'
   export default{
-    props: ['refuelLog'],
+    props: ['refuelLog', 'pickerValue'],
     data: function () {
       return {
         showFlag: false,
-        pickerValue: "",
         payTypeOptions: [
           {
             label: '现金',
@@ -90,6 +94,42 @@
       })
     },
     methods: {
+      save(){
+        let form = Object.assign({id: this.refuelLog.refuel_id}, this.refuelLog);
+        form.refuel_time = new Date(form.refuel_time).getTime();
+        if (!this.refuelLog.refuel_id) {
+          newRefuelLog(form).then(res => {
+            let {code, data, errMsg} = res.data;
+            if (code == 200) {
+              this.$emit('refresh');
+              this.hide()
+            } else {
+            }
+          })
+        } else {
+          updateRefuelLogById(form).then(res => {
+            let {code, data, errMsg} = res.data;
+            if (code == 200) {
+              this.$emit('refresh');
+              this.hide()
+            } else {
+            }
+          })
+        }
+      },
+      del(){
+        delRefuelLogById({id: this.refuelLog.refuel_id}).then(res => {
+          let {code, data, errMsg} = res.data;
+          if (code == 200) {
+            this.$emit('refresh');
+            this.hide()
+          } else {
+          }
+        })
+      },
+      handleConfirm(date){
+        this.refuelLog.refuel_time = date;
+      },
       openPicker() {
         this.$refs.picker.open();
       },
@@ -109,12 +149,17 @@
         this.showFlag = false;
       },
     },
-    components: {}
+    components: {},
+    computed:{
+        refuelTimeshow(){
+            return timeFormate(new Date(this.refuelLog.refuel_time).getTime(),'YYYY年MM月DD日')
+        }
+    }
   }
 </script>
 
 <style scoped>
-  .wrapper{
+  .wrapper {
     position: fixed;
     top: 0px;
     left: 0;
@@ -123,6 +168,7 @@
     width: 100%;
     background-color: #fff;
   }
+
   .add {
     position: fixed;
     top: 120px;
@@ -134,8 +180,8 @@
 
   .add-title {
     position: fixed;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 90px;
     line-height: 96px;
@@ -165,9 +211,10 @@
     font-size: 32px;
   }
 
-  .add .add-wrapper{
-    padding:0 26px 0 26px;
+  .add .add-wrapper {
+    padding: 0 26px 0 26px;
   }
+
   .move-enter-active, .move-leave-active {
     transition: all 0.2s linear;
   }
@@ -176,4 +223,21 @@
     transform: translate3d(100%, 0, 0);
   }
 
+  .refuel-save, .refuel-del {
+    margin: 60px auto;
+    width: 50%;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 10px;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 32px;
+  }
+
+  .refuel-del {
+    background-color: #CE1B22;
+  }
 </style>
