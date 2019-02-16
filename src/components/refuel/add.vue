@@ -95,22 +95,29 @@
     },
     methods: {
       save(){
-        let form = Object.assign({id: this.refuelLog.refuel_id}, this.refuelLog);
+        let form = Object.assign({}, this.refuelLog);
         form.refuel_time = new Date(form.refuel_time).getTime();
         if (!this.refuelLog.refuel_id) {
           newRefuelLog(form).then(res => {
             let {code, data, errMsg} = res.data;
             if (code == 200) {
-              this.$emit('refresh');
-              this.hide()
+              form.refuel_id = data.refuel_id;
+              this.stationOptions.forEach(st=>{
+                  if(st.value == form.refuel_station_id){
+                    form.station_name = st.label;
+                  }
+              })
+              this.$emit("newRefuel", form);
+              this.hide();
             } else {
             }
           })
         } else {
+          form.id = this.refuelLog.refuel_id;
           updateRefuelLogById(form).then(res => {
             let {code, data, errMsg} = res.data;
             if (code == 200) {
-              this.$emit('refresh');
+              this.$emit('updateRefuel', this.refuelLog.refuel_id);
               this.hide()
             } else {
             }
@@ -121,8 +128,8 @@
         delRefuelLogById({id: this.refuelLog.refuel_id}).then(res => {
           let {code, data, errMsg} = res.data;
           if (code == 200) {
-            this.$emit('refresh');
-            this.hide()
+            this.$emit('delRefuel', this.refuelLog.refuel_id);
+            this.hide();
           } else {
           }
         })
@@ -150,10 +157,10 @@
       },
     },
     components: {},
-    computed:{
-        refuelTimeshow(){
-            return timeFormate(new Date(this.refuelLog.refuel_time).getTime(),'YYYY年MM月DD日')
-        }
+    computed: {
+      refuelTimeshow(){
+        return timeFormate(new Date(this.refuelLog.refuel_time).getTime(), 'YYYY年MM月DD日')
+      }
     }
   }
 </script>

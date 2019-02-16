@@ -1,6 +1,7 @@
 <template>
   <div class="common-wrapper">
-    <add ref="add" :refuelLog="log" :pickerValue="pickerValue"></add>
+    <add ref="add" :refuelLog="log" :pickerValue="pickerValue" @newRefuel="addLog" @updateRefuel="updateLog"
+         @delRefuel="delLog"></add>
     <div class="owner-info">
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
@@ -16,7 +17,7 @@
     <transition name="fade">
       <div v-show="dropDown" class="refresh">更新...<i class="iconfont icon-chebaba-jibencanshu rotating"></i></div>
     </transition>
-    <div class="refuel-log" ref="log" >
+    <div class="refuel-log" ref="log">
       <ul>
         <li v-for="(log,index) in refuelLog" :key="log.refuel_id" @click="edit(log)">
           <p class="refuel-log-oil">
@@ -24,7 +25,7 @@
               <i class="iconfont icon-zhongshiyou" v-if="log.refuel_station_id =='10001'"></i>
               <i class="iconfont icon-zhongshihua" v-if="log.refuel_station_id =='10002'"></i>
               <i class="iconfont icon-yangguang" v-if="log.refuel_station_id =='10003'"></i>
-              {{log.station_name}}-{{log.station_address}}
+              {{log.station_name}}
             </span>
             <span class="refuel-log-oilType">{{log.oil_type}}#</span>
           </p>
@@ -59,12 +60,12 @@
   import Bscroll from 'better-scroll';
   import split  from  '../common/split.vue'
   import add  from  './add.vue'
-  import {lsWrite,lsRead} from '../../common/js/ls'
+  import {lsWrite, lsRead} from '../../common/js/ls'
   export default{
     data(){
       return {
-        pickerValue:new Date(),
-        log:"",
+        pickerValue: new Date(),
+        log: "",
         addColor: 0,
         dropDown: false,
         dropUp: false,
@@ -75,10 +76,26 @@
         sum: 0,
         refuelLog: [],
         moreText: '加载中...',
-        vueScroll:{}
+        vueScroll: {}
       }
     },
     methods: {
+      addLog(val){
+        this.refuelLog.unshift(val);
+        this.count++;
+        this.scroll.scrollTo(0, 0, 300);
+      },
+      updateLog(val){
+        console.log(val);
+      },
+      delLog(val){
+        this.refuelLog.forEach((log, index) => {
+          if (log.refuel_id == val) {
+            this.refuelLog.splice(index, 1);
+            this.count--;
+          }
+        })
+      },
       _getRefuelLogAll(){
         getRefuelLogAll({page: this.page, pageSize: this.pageSize}).then(res => {
           let {code, log, count, sum, errMsg} = res.data;
@@ -102,19 +119,21 @@
         this.addColor = 1;
       },
       touchE(){
-        this.log ={
-          refuel_time:new Date(),
-          pay_money:0,
-          pay_type:'cash',
-          oil_type:92,
-          refuel_station_id:'10002',
-          mileage:0
+        this.log = {
+          refuel_time: new Date(),
+          pay_money: 0,
+          pay_type: 'cash',
+          oil_type: 92,
+          refuel_station_id: '10002',
+          mileage: 0,
+          liters: 0
         }
         this.addColor = 0;
         this.$refs.add.show();
       },
       edit(log){
-        this.log =Object.assign({},log);
+        console.log(log);
+        this.log = Object.assign({}, log);
         this.pickerValue = new Date(this.log.refuel_time);
         this.$refs.add.show();
       }
@@ -181,15 +200,15 @@
 
     },
     computed: {
-      total_mileAge:function(){
-          let t = 0;
-          for(let i=0;i<this.refuelLog.length;i++){
-              if(this.refuelLog[i].mileage != ''){
-                  t = this.refuelLog[i].mileage;
-                  break;
-              }
+      total_mileAge: function () {
+        let t = 0;
+        for (let i = 0; i < this.refuelLog.length; i++) {
+          if (this.refuelLog[i].mileage != '') {
+            t = this.refuelLog[i].mileage;
+            break;
           }
-          return t;
+        }
+        return t;
       }
     },
     components: {
@@ -226,7 +245,7 @@
         flex 0 0 200px
         text-align center
         line-height 212px
-        border-left 2px solid #F8F8F8
+        border-left 2px solid #ddd
         transition all 0.2s ease-in-out
         .iconfont
           font-size 120px
@@ -235,7 +254,6 @@
         background-color #ddd
       .touchno
         color #000
-        background-color #fff
     .refresh
       width 100%
       height 30px
