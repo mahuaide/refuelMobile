@@ -5,8 +5,8 @@
     <div class="owner-info">
       <div class="refuel-owner">
         <span><i class="iconfont icon-anquandai "></i>车主：{{$store.state.user.license}}</span>
-        <span><i class="iconfont icon-jingdong-jiayouqia-e"></i>加油：{{sum}}元</span>
-        <span><i class="iconfont icon-gonglishu"></i>里程：{{total_mileAge}}公里</span>
+        <span><i class="iconfont icon-jingdong-jiayouqia-e"></i>加油：{{$store.state.user.payTotal}}元</span>
+        <span><i class="iconfont icon-gonglishu"></i>里程：{{$store.state.user.mileage}}公里</span>
         <span><i class="iconfont icon-maiche"></i>车型：{{$store.state.user.carType}}</span>
       </div>
       <div class="refuel-add" :class="[addColor?'touchE':'touchno']" @touchstart="touchS()" @touchend="touchE()">
@@ -55,8 +55,9 @@
 
 
 <script type="text/ecmascript-6">
-  import {getRefuelLogAll} from '../../http/api'
+  import {getRefuelLogAll,getLoginUserInfo} from '../../http/api'
   import {timeFormate} from '../../filters/time'
+  import * as types from '../../store/type'
   import Bscroll from 'better-scroll';
   import split  from  '../common/split.vue'
   import add  from  './add.vue'
@@ -80,10 +81,19 @@
       }
     },
     methods: {
+      getLoginUser(){
+        getLoginUserInfo().then(res => {
+          let {code, data, errMsg} = res.data;
+          if (code == 200) {
+            this.$store.commit(types.LOGIN, data);
+          }
+        })
+      },
       addLog(val){
         this.refuelLog.unshift(val);
         this.count++;
         this.scroll.scrollTo(0, 0, 300);
+        this.getLoginUser()
       },
       updateLog(val){
         this.refuelLog.forEach((log, index) => {
@@ -91,6 +101,7 @@
             this.refuelLog.splice(index, 1,val);
           }
         })
+        this.getLoginUser()
       },
       delLog(val){
         this.refuelLog.forEach((log, index) => {
@@ -99,6 +110,7 @@
             this.count--;
           }
         })
+        this.getLoginUser()
       },
       _getRefuelLogAll(){
         getRefuelLogAll({page: this.page, pageSize: this.pageSize}).then(res => {
