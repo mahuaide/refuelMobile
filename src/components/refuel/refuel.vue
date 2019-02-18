@@ -155,6 +155,7 @@
     },
     mounted(){
       let _this = this;
+      this.getLoginUser();
       this._getRefuelLogAll();
       this.$nextTick(() => {
         let footer = document.getElementById('footer');

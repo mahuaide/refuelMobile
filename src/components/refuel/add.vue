@@ -49,6 +49,7 @@
 <script>
   import BScroll from 'better-scroll';
   import {timeFormate} from '../../filters/time'
+  import { MessageBox } from 'mint-ui';
   import {getStationAll, updateRefuelLogById, delRefuelLogById, newRefuelLog} from '../../http/api'
   import split  from  '../common/split.vue'
   export default{
@@ -130,14 +131,18 @@
         }
       },
       del(){
-        delRefuelLogById({id: this.refuelLog.refuel_id}).then(res => {
-          let {code, data, errMsg} = res.data;
-          if (code == 200) {
-            this.$emit('delRefuel', this.refuelLog.refuel_id);
-            this.hide();
-          } else {
+        MessageBox.confirm('是否删除?').then(action => {
+          if(action ==='confirm'){
+            delRefuelLogById({id: this.refuelLog.refuel_id}).then(res => {
+              let {code, data, errMsg} = res.data;
+              if (code == 200) {
+                this.$emit('delRefuel', this.refuelLog.refuel_id);
+                this.hide();
+              } else {
+              }
+            })
           }
-        })
+        });
       },
       handleConfirm(date){
         this.refuelLog.refuel_time = date;
@@ -185,7 +190,7 @@
     position: fixed;
     top: 120px;
     left: 0;
-    bottom: 200px;
+    bottom: 120px;
     width: 100%;
     background-color: #fff;
   }
