@@ -20,7 +20,7 @@
         <div class="add-wrapper">
           <mt-field label="加油日期" placeholder="" v-model="refuelTimeshow" @click.native="openPicker()"
                     :readonly=true></mt-field>
-          <mt-field label="付款金额" placeholder="" v-model="refuelLog.pay_money"></mt-field>
+          <mt-field label="付款金额" placeholder="" v-model.trim="refuelLog.pay_money"></mt-field>
           <mt-radio
             title="付款方式"
             v-model="refuelLog.pay_type"
@@ -49,7 +49,7 @@
 <script>
   import BScroll from 'better-scroll';
   import {timeFormate} from '../../filters/time'
-  import { MessageBox } from 'mint-ui';
+  import { MessageBox,Toast } from 'mint-ui';
   import {getStationAll, updateRefuelLogById, delRefuelLogById, newRefuelLog} from '../../http/api'
   import split  from  '../common/split.vue'
   export default{
@@ -96,6 +96,20 @@
     },
     methods: {
       save(){
+        if(this.refuelLog.pay_money =="") {
+          Toast({
+            message: "请输入付款金额！",
+            duration: 2000
+          });
+          return
+        }
+        if(this.refuelLog.mileage =="") {
+          Toast({
+            message: "请输入里程！",
+            duration: 2000
+          });
+          return
+        }
         let form = Object.assign({}, this.refuelLog);
         form.refuel_time = new Date(form.refuel_time).getTime();
         if (!this.refuelLog.refuel_id) {
