@@ -32,14 +32,24 @@
 
 <script type="text/ecmascript-6">
   import {getLoginUserInfo} from '../../http/api'
+  import * as types from '../../store/type'
   import split from '../common/split.vue'
   export default{
     data(){
       return {}
     },
     mounted(){
+        this.getLoginUser();
     },
     methods:{
+      getLoginUser(){
+        getLoginUserInfo().then(res => {
+          let {code, data, errMsg} = res.data;
+          if (code == 200) {
+            this.$store.commit(types.LOGIN, data);
+          }
+        })
+      },
       logout(){
        this.$router.replace('/login')
       }

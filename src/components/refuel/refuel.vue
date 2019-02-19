@@ -25,6 +25,7 @@
               <i class="iconfont icon-zhongshiyou" v-if="log.refuel_station_id =='10001'"></i>
               <i class="iconfont icon-zhongshihua" v-if="log.refuel_station_id =='10002'"></i>
               <i class="iconfont icon-yangguang" v-if="log.refuel_station_id =='10003'"></i>
+              <i class="iconfont icon-kepai_Shell1" v-if="log.refuel_station_id =='10004'"></i>
               {{log.station_name}}
             </span>
             <span class="refuel-log-oilType">{{log.oil_type}}#</span>
@@ -330,6 +331,8 @@
                 vertical-align top
               .icon-zhongshihua, .icon-yangguang
                 font-size 36px
+              .icon-kepai_Shell1
+                font-size 38px
             .refuel-log-oilType
               display block
               float right
