@@ -5,23 +5,27 @@
     </div>
     <div class="user-name">{{$store.state.user.userName}}</div>
     <div class="user-info">
-      <div class="user-mileage">{{$store.state.user.mileage}}公里</div>
+      <div class="user-mileage">{{$store.state.user.mileage || 0}} 公里</div>
       <div class="user-license">{{$store.state.user.license}}</div>
-      <div class="user-payTotal">{{$store.state.user.payTotal}}元</div>
+      <div class="user-payTotal">{{$store.state.user.payTotal || 0}} 元</div>
     </div>
     <split></split>
     <div class="user-info-unit">
       资料修改
+      <i class="iconfont icon-xiangyou"></i>
     </div>
     <split></split>
     <div class="user-info-unit">
       密码重置
+      <i class="iconfont icon-xiangyou"></i>
     </div>
     <split></split>
     <div class="user-info-unit">
       当前版本
+      <i class="iconfont icon-xiangyou"></i>
     </div>
     <split></split>
+    <div class="user-logout" @click="logout">退出</div>
   </div>
 </template>
 
@@ -34,6 +38,11 @@
       return {}
     },
     mounted(){
+    },
+    methods:{
+      logout(){
+       this.$router.replace('/login')
+      }
     },
     components: {
       split
@@ -82,9 +91,29 @@
     box-sizing border-box
     width 100%
     height 90px
-    line-height 90px
+    line-height 94px
     font-size 30px
-    padding-left 20px
+    padding 0px 20px
+    .iconfont
+      display inline-block
+      height 100%
+      font-size 30px
+      float right
+      color #ddd
+  .user-logout {
+    margin: 80px auto;
+    width: 50%;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 10px;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 32px;
+    background-color: #CE1B22;
+  }
 
 </style>
 
