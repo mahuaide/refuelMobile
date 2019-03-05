@@ -11,6 +11,7 @@
       </div>
       <div class="refuel-add" :class="[addColor?'touchE':'touchno']" @touchstart="touchS()" @touchend="touchE()">
         <i class="iconfont icon-shiyouhangye"></i>
+        <span class="refuel-text">点我加油</span>
       </div>
     </div>
     <split></split>
@@ -260,12 +261,17 @@
             font-size 32px
       .refuel-add
         flex 0 0 200px
+        padding-top 90px
         text-align center
-        line-height 212px
+        line-height 0px
         border-left 2px solid #ddd
         transition all 0.2s ease-in-out
         .iconfont
           font-size 120px
+        .refuel-text
+          display block
+          margin-top 20px
+          font-size 24px
       .touchE
         color red
         background-color #ddd
