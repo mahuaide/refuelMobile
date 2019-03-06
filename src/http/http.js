@@ -17,7 +17,6 @@ if (process.env.NODE_ENV === 'production') {
   axios.defaults.baseURL = "http://localhost:3000";
   // axios.defaults.baseURL = "http://k2321512s9.imwork.net:16607";
 }
-
 axios.defaults.withCredentials = true;
 
 // http request 拦截器
