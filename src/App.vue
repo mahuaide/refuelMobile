@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <Loading v-delay-loading="{show:isLoading,time:700}" ></Loading>
+    <loading v-delay-loading="{show:isLoading,time:700}" ></loading>
   </div>
 </template>
 

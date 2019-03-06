@@ -13,7 +13,7 @@ import 'lib-flexible'
 import 'animate.css'
 import  i18n from './common/lang/index'
 import fastclick from 'fastclick'
-import loading from './components/loading/loading.vue'
+import loading from './components/loading'
 import {Loadmore, Popup, Switch,DatetimePicker,Field,Radio } from 'mint-ui';
 
 fastclick.attach(document.body);
