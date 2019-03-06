@@ -13,7 +13,7 @@ import 'lib-flexible'
 import 'animate.css'
 import  i18n from './common/lang/index'
 import fastclick from 'fastclick'
-import Loading from './components/loading'
+import loading from './components/loading/loading.vue'
 import {Loadmore, Popup, Switch,DatetimePicker,Field,Radio } from 'mint-ui';
 
 fastclick.attach(document.body);
@@ -27,7 +27,7 @@ Vue.component(Switch.name, Switch);
 Vue.component(DatetimePicker.name, DatetimePicker);
 Vue.component(Field.name, Field);
 Vue.component(Radio.name, Radio);
-Vue.use(Loading);
+Vue.use(loading);
 
 Vue.directive('delay-loading', {componentUpdated:function (el, binding) {
    t = setTimeout(() => {
