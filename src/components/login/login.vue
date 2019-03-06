@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="logo">
-      <img src="../../../static/img/佳油宝.png" alt="">
+      <img src="../../../static/img/jiayoubao.png" alt="">
       <p class="sys-name"><span style="color:#CE1B22">+.</span>U</p>
       <p class="sys-name">{{$t('login.projectName')}}</p>
     </div>
